@@ -1,11 +1,12 @@
 import React from 'react';
-import './App.css';
+import './Styles/App.scss';
+import testData from './testData';
+import ReactTimelineEvents from './Components/ReactTimelineEvents';
 
-const App: React.FC = () => {
+const App: React.FC = (props) => {
+  let data: object = testData;
   return (
-    <div className="App">
-
-    </div>
+      <ReactTimelineEvents data={data} />
   );
 };
 
